@@ -1,6 +1,14 @@
+/*
+ * @Author: jiangqm
+ * @Date: 2023-08-29 14:50:47
+ * @Description: 
+ */
 module.exports = {
   root: true,
-  env: { browser: true, es2020: true },
+  env: { browser: true, es2020: true, "node": true,
+  "browser": true,
+  "commonjs": true,
+  "amd": true },
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',

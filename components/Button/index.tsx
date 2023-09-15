@@ -4,7 +4,7 @@
  * @Description: 
  */
 import React from "react";
-import './index.scss';
+import styles from './style/index.module.scss';
 type PropsType = {
     children?:React.ReactElement
     danger?:boolean
@@ -15,6 +15,6 @@ type PropsType = {
  * @returns 
  */
 const MyButton: React.FC<PropsType> = (props) => {
-    return <button className={props.danger?'btn-danger':''}>{props.children}</button>
+    return <button className={props.danger?styles['btn-danger']:''}>{props.children}</button>
 }
 export default MyButton

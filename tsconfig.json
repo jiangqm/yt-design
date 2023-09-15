@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": false,
     "jsx": "react-jsx",
-
+    "allowSyntheticDefaultImports":true,
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
@@ -24,7 +24,7 @@
   },
   "paths": {
     "@/*": ["./src/*"],
-    "@@/*": ["./packages/components/*"]
+    "@@/*": ["./components/*"]
   },
   "include": ["**/*.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
